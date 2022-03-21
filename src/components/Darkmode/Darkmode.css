@@ -1,0 +1,35 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --black: rgba(0, 0, 0, 0.89);
+}
+
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--black);
+}
+
+body.dark {
+  --background-color: var(--black);
+  --text-color: var(--white);
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+
+#tesing.light {
+  --background-color: var(--white);
+  --text-color: var(--black);
+}
+
+#testing.dark {
+  --background-color: var(--black);
+  --text-color: var(--white);
+}
+
+#testing {
+  background: var(--background-color);
+  color: var(--text-color);
+}
